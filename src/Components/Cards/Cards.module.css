@@ -12,15 +12,32 @@
     border-bottom: 15px solid rgba(255, 241, 194, 0.5);
 }
 
+.newinfected {
+    border-top: 15px solid rgba(255, 241, 194, 0.3);
+    ;
+    border-bottom: 15px solid rgba(255, 241, 194, 0.3);
+}
+
 .recovered {
     border-top: 15px solid rgba(203, 234, 209, 0.5);
     ;
     border-bottom: 15px solid rgba(203, 234, 209, 0.5);
 }
 
+.newrecovered {
+    border-top: 15px solid rgba(203, 234, 209, 0.3);
+    ;
+    border-bottom: 15px solid rgba(203, 234, 209, 0.3);
+}
+
 .deaths {
     border-top: 15px solid rgba(246, 204, 209, 0.5);
     border-bottom: 15px solid rgba(246, 204, 209, 0.5);
+}
+
+.newdeaths {
+    border-top: 15px solid rgba(246, 204, 209, 0.3);
+    border-bottom: 15px solid rgba(246, 204, 209, 0.3);
 }
 
 @media only screen and (max-width: 770px) {

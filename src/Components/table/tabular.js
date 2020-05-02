@@ -23,6 +23,28 @@ const Tabular = () => {
         fetchAPIState()
     }, [])
 
+    // const sortConfirmed = () => {
+    //     return (
+    //         <>
+    //             <TableBody>
+    //                 {fetchedState.map((e, i) => (
+    //                     <TableRow key={i}>
+    //                         <TableCell component="th" scope="row">
+    //                             {e.Country}
+    //                         </TableCell>
+    //                         <TableCell style={{ background: 'rgba(255, 241, 194, 0.3)' }} align="right">{parseInt(e.NewConfirmed)}</TableCell>
+    //                         <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{parseInt(e.TotalConfirmed)}</TableCell>
+    //                         <TableCell style={{ background: 'rgba(203, 234, 209, 0.3)' }} align="right">{parseInt(e.NewRecovered)}</TableCell>
+    //                         <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{parseInt(e.TotalRecovered)}</TableCell>
+    //                         <TableCell style={{ background: 'rgba(246, 204, 209, 0.3)' }} align="right">{parseInt(e.NewDeaths)}</TableCell>
+    //                         <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{parseInt(e.TotalDeaths)}</TableCell>
+    //                     </TableRow>
+    //                 ))}
+    //             </TableBody>
+    //         </>
+    //     )
+    // }
+
     return (
         <>
             <div className="container">
@@ -30,10 +52,13 @@ const Tabular = () => {
                     <Table className={styles.container} aria-label="simple table">
                         <TableHead>
                             <TableRow>
-                                <TableCell className="alert-secondary">Country</TableCell>
-                                <TableCell className="alert-warning" align="right">Total Infected</TableCell>
-                                <TableCell className="alert-success" align="right">Total Recovered</TableCell>
-                                <TableCell className="alert-danger" align="right">Total Deaths</TableCell>
+                                <TableCell className="alert alert-secondary">Country</TableCell>
+                                <TableCell style={{ background: 'rgba(255, 241, 194, 0.6)' }} align="center">New Confirmed</TableCell>
+                                <TableCell className="alert alert-warning" align="center">Total Confirmed</TableCell>
+                                <TableCell style={{ background: 'rgba(203, 234, 209, 0.6)' }} align="center">New Recovered</TableCell>
+                                <TableCell className="alert alert-success" align="center">Total Recovered</TableCell>
+                                <TableCell style={{ background: 'rgba(246, 204, 209, 0.6)' }} align="center">New Deaths</TableCell>
+                                <TableCell className="alert alert-danger" align="center">Total Deaths</TableCell>
 
                             </TableRow>
                         </TableHead>
@@ -44,9 +69,12 @@ const Tabular = () => {
                                     <TableCell component="th" scope="row">
                                         {e.Country}
                                     </TableCell>
-                                    <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{parseInt(e.TotalConfirmed) + parseInt(e.NewConfirmed)}</TableCell>
-                                    <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{parseInt(e.TotalRecovered) + parseInt(e.NewRecovered)}</TableCell>
-                                    <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{parseInt(e.TotalDeaths) + parseInt(e.NewDeaths)}</TableCell>
+                                    <TableCell style={{ background: 'rgba(255, 241, 194, 0.3)' }} align="right">{parseInt(e.NewConfirmed)}</TableCell>
+                                    <TableCell style={{ background: 'rgba(255, 241, 194, 0.5)' }} align="right">{parseInt(e.TotalConfirmed)}</TableCell>
+                                    <TableCell style={{ background: 'rgba(203, 234, 209, 0.3)' }} align="right">{parseInt(e.NewRecovered)}</TableCell>
+                                    <TableCell style={{ background: 'rgba(203, 234, 209, 0.5)' }} align="right">{parseInt(e.TotalRecovered)}</TableCell>
+                                    <TableCell style={{ background: 'rgba(246, 204, 209, 0.3)' }} align="right">{parseInt(e.NewDeaths)}</TableCell>
+                                    <TableCell style={{ background: 'rgba(246, 204, 209, 0.5)' }} align="right">{parseInt(e.TotalDeaths)}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>

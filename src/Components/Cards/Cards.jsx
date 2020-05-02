@@ -35,12 +35,12 @@ const Cards = ({
               style={{ fontSize: "18px", textAlign: "center" }}
               gutterBottom
             >
-              Total Infected in the World
+              Total Confirmed in the World
             </Typography>
             <Typography variant="h5" style={{ textAlign: "center" }}>
               <CountUp
                 start={0}
-                end={parseInt(totalconfirmed) + parseInt(newconfirmed)}
+                end={parseInt(totalconfirmed)}
                 duration={2.5}
                 separator=","
               />
@@ -66,7 +66,7 @@ const Cards = ({
             <Typography variant="h5" style={{ textAlign: "center" }}>
               <CountUp
                 start={0}
-                end={parseInt(totalrecovered) + parseInt(newrecovered)}
+                end={parseInt(totalrecovered)}
                 duration={2.5}
                 separator=","
               />
@@ -93,7 +93,7 @@ const Cards = ({
             <Typography variant="h5" style={{ textAlign: "center" }}>
               <CountUp
                 start={0}
-                end={parseInt(totaldeaths) + parseInt(newdeaths)}
+                end={parseInt(totaldeaths)}
                 duration={2.5}
                 separator=","
               />
