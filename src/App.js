@@ -34,8 +34,10 @@ class App extends React.Component {
         {/* <NewCards data={data} /> */}
 
         <Tabular />
-        <div className="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://www.linkedin.com/in/khaidemsandip/"> Kurosaki</a>
+        <div className="footer-copyright text-center py-3">
+          © 2020 Copyright:
+    <a href="https://www.linkedin.com/in/khaidemsandip/"> Kurosaki. </a>
+       Powered by <a href="https://www.postman.com/">POSTMAN </a>
         </div>
       </>
     );
